@@ -1,1 +1,61 @@
 @import "tailwindcss";
+
+/* Global brand primitives */
+:root {
+	--brand: #ff7b00; /* Accent orange */
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: #0b0c10; 
+	color: #e5e7eb;
+	font-family: "Poppins", "Inter", "Montserrat", ui-sans-serif, system-ui,
+		-apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji",
+		"Segoe UI Emoji";
+}
+
+
+.bg-grid {
+	background-image: linear-gradient(
+			rgba(255, 255, 255, 0.04) 1px,
+			transparent 1px
+		),
+		linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+	background-size: 32px 32px, 32px 32px;
+	mask-image: radial-gradient(ellipse at center, black 60%, transparent 100%);
+}
+
+
+.glass {
+	background: linear-gradient(
+		180deg,
+		rgba(255, 255, 255, 0.06) 0%,
+		rgba(255, 255, 255, 0.02) 100%
+	);
+	backdrop-filter: blur(8px);
+	border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+
+.ring-accent {
+	box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.06), 0 0 0 2px var(--brand);
+}
+
+
+@keyframes fadeUp {
+	from {
+		opacity: 0;
+		transform: translateY(12px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.animate-fade-up {
+	animation: fadeUp 700ms ease-out both;
+}
