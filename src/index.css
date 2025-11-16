@@ -59,3 +59,41 @@ body {
 .animate-fade-up {
 	animation: fadeUp 700ms ease-out both;
 }
+
+/* === Drone themed animation primitives === */
+@keyframes radarSweep {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+
+@keyframes pulsePing {
+	0% { transform: scale(0.3); opacity: 0.9; }
+	70% { transform: scale(1); opacity: 0; }
+	100% { transform: scale(1); opacity: 0; }
+}
+
+@keyframes dashMove {
+	0% { stroke-dashoffset: 0; }
+	100% { stroke-dashoffset: -1000; }
+}
+
+.radar-sweep {
+	background: conic-gradient(from 0deg, rgba(255,123,0,0.25), transparent 55%);
+	mask: radial-gradient(circle at center, black 60%, transparent 72%);
+	animation: radarSweep 6s linear infinite;
+}
+
+.ping {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	border-radius: 9999px;
+	background: var(--brand);
+	box-shadow: 0 0 0 2px rgba(255,123,0,0.4);
+	animation: pulsePing 2.8s ease-out infinite;
+}
+
+.flight-path path {
+	stroke-dasharray: 6 12;
+	animation: dashMove 14s linear infinite;
+}

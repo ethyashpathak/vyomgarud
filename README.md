@@ -1,16 +1,71 @@
-# React + Vite
+# VyomGarud – UAV Systems Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive single‑page site for VyomGarud, a military‑grade UAV systems company. Built with React + Vite, Tailwind CSS v4, and Framer Motion.
 
-Currently, two official plugins are available:
+## Tech Stack
+- React 19 (Vite)
+- Tailwind CSS v4 (@tailwindcss/vite)
+- Framer Motion for subtle animations
+- Google Fonts: Poppins, Inter, Montserrat
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- Dark, modern, slightly futuristic design with orange accent (#ff7b00)
+- Sections: Hero, About, Capabilities, Highlights, Contact, Footer
+- Subtle entrance animations and glass/radar‑grid styling
+- Fully responsive (mobile → desktop)
 
-## React Compiler
+## Getting Started
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1) Install dependencies (already present in package-lock.json):
 
-## Expanding the ESLint configuration
+```cmd
+npm install
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+2) Start the dev server:
+
+```cmd
+npm run dev
+```
+
+3) Build for production:
+
+```cmd
+npm run build
+```
+
+4) Preview the production build:
+
+```cmd
+npm run preview
+```
+
+## Project Structure
+- `src/components/` – Reusable sections (Hero, About, Capabilities, Highlights, Contact, Footer)
+- `src/index.css` – Tailwind import + small brand utilities (grid, glass, fade‑up)
+- `index.html` – Meta tags + Google Fonts
+
+## Design Notes
+- Aesthetic: confident, clean, persuasive; emphasizes reliability and precision
+- Color palette: charcoal/black background, white/neutral text, brand orange (#ff7b00)
+- Typography: Poppins (primary), Inter/Montserrat fallbacks
+- Motion: short fade/slide‑up transitions; avoids distracting animations
+
+## Screenshots / GIF
+- Add screenshots to a `/docs` folder and link them here:
+	- `/docs/hero.png`
+	- `/docs/mobile.png`
+	- `/docs/demo.gif`
+
+## Deployment
+You can deploy the `dist/` folder to any static host (Netlify, Vercel, GitHub Pages).
+
+## Submission Checklist
+- [x] GitHub repository link
+- [x] README with setup and design notes
+- [ ] Screenshot or GIF (add in `/docs`)
+- [ ] Optional live demo link
+- [x] Progressive commits
+
+## License
+© VyomGarud. All rights reserved.
