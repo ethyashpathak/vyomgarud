@@ -14,6 +14,20 @@ A modern, responsive single‑page site for VyomGarud, a military‑grade UAV sy
 - Subtle entrance animations and glass/radar‑grid styling
 - Fully responsive (mobile → desktop)
 
+## Visual Preview
+Below are inline assets pulled directly from the `public/` directory (development images):
+
+### Hero
+![Hero UAV Visual](public/hero.png)
+
+### About
+![About / Engineering Focus](public/about.png)
+
+### Contact 
+![Contact Engagement Placeholder](public/contact.png)
+
+
+
 ## Getting Started
 
 1) Install dependencies (already present in package-lock.json):
@@ -59,13 +73,6 @@ npm run preview
 
 ## Deployment
 You can deploy the `dist/` folder to any static host (Netlify, Vercel, GitHub Pages).
-
-## Submission Checklist
-- [x] GitHub repository link
-- [x] README with setup and design notes
-- [ ] Screenshot or GIF (add in `/docs`)
-- [ ] Optional live demo link
-- [x] Progressive commits
 
 ## License
 © VyomGarud. All rights reserved.
