@@ -19,7 +19,7 @@ const DroneMark = () => (
   </svg>
 );
 
-// --- ADDED: Variants for the title underline ---
+
 const titleUnderlineVariants = {
   hidden: { scaleX: 0, originX: 0 },
   visible: {
